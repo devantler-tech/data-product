@@ -1,35 +1,10 @@
-name: Test
-
+name: Test .NET solution or project
 on:
-  pull_request:
-    # Added 'edited' temporarily, as there currently is no trigger for when the base branch is updated.
-    # https://github.com/orgs/community/discussions/64119
-    types: [opened, synchronize, reopened, ready_for_review, closed, edited]
-    branches: main
   push:
-    branches: main
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+    branches:
+      - main
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
-    steps:
-      - name: 📑 Checkout
-        uses: actions/checkout@v4
-      - name: ⚙️ Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 9
-      - name: 🧪 Test
-        run: dotnet test --collect:"XPlat Code Coverage"
-      - name: 📄 Upload Code Coverage to CodeCov
-        uses: codecov/codecov-action@v5
-        with:
-          files: tests/**/TestResults/**/coverage.cobertura.xml
-          fail_ci_if_error: true
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+    uses: devantler-tech/.github/.github/workflows/dotnet-test.yaml@main
+    secrets: inherit

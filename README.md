@@ -13,6 +13,106 @@ The data product is built to support most cloud providers and provisioning tools
 
 <!-- readme-tree start -->
 ```
+.
+├── .github
+│   └── workflows
+├── .vscode
+├── src
+│   ├── Devantler.DataProduct
+│   │   ├── Features
+│   │   │   ├── Apis
+│   │   │   │   ├── GraphQL
+│   │   │   │   ├── Rest
+│   │   │   │   │   └── Controllers
+│   │   │   │   └── gRPC
+│   │   │   ├── Auth
+│   │   │   ├── Caching
+│   │   │   │   ├── Extensions
+│   │   │   │   └── Services
+│   │   │   ├── Configuration
+│   │   │   ├── Dashboard
+│   │   │   │   └── UI
+│   │   │   │       ├── Components
+│   │   │   │       ├── Layouts
+│   │   │   │       └── Pages
+│   │   │   ├── DataCatalog
+│   │   │   │   └── Services
+│   │   │   │       └── DataHubClient
+│   │   │   │           ├── Extensions
+│   │   │   │           ├── Helpers
+│   │   │   │           └── Models
+│   │   │   │               ├── Aspects
+│   │   │   │               │   └── SchemaMetadata
+│   │   │   │               │       └── PlatformSchemas
+│   │   │   │               └── Entities
+│   │   │   ├── DataStore
+│   │   │   │   ├── Entities
+│   │   │   │   ├── Repositories
+│   │   │   │   └── Services
+│   │   │   ├── Inputs
+│   │   │   │   ├── JsonConverters
+│   │   │   │   └── Services
+│   │   │   ├── Mapping
+│   │   │   ├── Outputs
+│   │   │   │   └── Services
+│   │   │   ├── SchemaRegistry
+│   │   │   ├── Schemas
+│   │   │   ├── Telemetry
+│   │   │   │   ├── Logging
+│   │   │   │   ├── Metrics
+│   │   │   │   └── Tracing
+│   │   │   ├── Validation
+│   │   │   └── Webhooks
+│   │   ├── Properties
+│   │   ├── assets
+│   │   │   ├── input
+│   │   │   └── schemas
+│   │   └── wwwroot
+│   │       └── css
+│   ├── Devantler.DataProduct.Configuration
+│   │   ├── Extensions
+│   │   └── Options
+│   │       ├── Apis
+│   │       ├── Auth
+│   │       ├── CacheStore
+│   │       ├── Dashboard
+│   │       ├── DataCatalog
+│   │       ├── DataStore
+│   │       │   ├── NoSQL
+│   │       │   └── SQL
+│   │       ├── FeatureFlags
+│   │       ├── Inputs
+│   │       ├── Outputs
+│   │       ├── SchemaRegistry
+│   │       │   └── Providers
+│   │       └── Telemetry
+│   ├── Devantler.DataProduct.Generator
+│   │   ├── Extensions
+│   │   ├── IncrementalGenerators
+│   │   └── Models
+│   └── Devantler.SchemaRegistry.Client
+│       └── Models
+└── tests
+    ├── Devantler.DataProduct.Configuration.Tests.Unit
+    └── Devantler.DataProduct.Generator.Tests.Unit
+        ├── IncrementalGenerators
+        │   ├── AutoMapperProfileGeneratorTests
+        │   ├── CachingStartupExtensionsGeneratorTests
+        │   ├── DataStoreServiceGeneratorTests
+        │   ├── DataStoreStartupExtensionsGeneratorTests
+        │   ├── DbContextGeneratorTests
+        │   ├── EntitiesGeneratorTests
+        │   ├── GraphQlQueryGeneratorTests
+        │   ├── InputsStartupExtensionsGeneratorTests
+        │   ├── OutputsStartupExtensionsGeneratorTests
+        │   ├── RepositoryGeneratorTests
+        │   ├── RestBulkControllerGeneratorTests
+        │   ├── RestControllerGeneratorTests
+        │   └── SchemaGeneratorTests
+        └── assets
+            └── schemas
+
+98 directories
 ```
 <!-- readme-tree end -->
 

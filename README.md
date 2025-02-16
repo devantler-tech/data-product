@@ -8,6 +8,16 @@ This repo contains a Data Product as defined by Zhamak Dehghani in the Book [Dat
 
 The data product is built to support most cloud providers and provisioning tools by being built as a container.
 
+<details>
+  <summary>Show/hide folder structure</summary>
+
+<!-- readme-tree start -->
+```
+```
+<!-- readme-tree end -->
+
+</details>
+
 ## Prerequisites
 
 - .NET 7.0+

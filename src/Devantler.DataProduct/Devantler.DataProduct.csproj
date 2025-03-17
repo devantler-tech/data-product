@@ -26,10 +26,10 @@
     <PackageReference Include="Keycloak.AuthServices.Authentication" Version="2.6.0" /> <!-- Keep an eye on this package, if it is not maintained it should be replaced by manual setup, and if it is maintained it should replace the current setup. -->
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.3" />
     <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="4.0.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     <PackageReference Include="OpenTelemetry.Contrib.Preview" Version="1.0.0-beta2" />

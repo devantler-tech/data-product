@@ -23,7 +23,7 @@
     <PackageReference Include="HotChocolate.Data.EntityFramework" Version="14.2.0" />
     <PackageReference Include="HotChocolate.Data" Version="15.0.3" />
     <PackageReference Include="HotChocolate.Diagnostics" Version="14.3.0" />
-    <PackageReference Include="Keycloak.AuthServices.Authentication" Version="2.6.0" /> <!-- Keep an eye on this package, if it is not maintained it should be replaced by manual setup, and if it is maintained it should replace the current setup. -->
+    <PackageReference Include="Keycloak.AuthServices.Authentication" Version="2.6.1" /> <!-- Keep an eye on this package, if it is not maintained it should be replaced by manual setup, and if it is maintained it should replace the current setup. -->
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="9.0.2" />
